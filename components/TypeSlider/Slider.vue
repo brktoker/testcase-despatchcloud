@@ -27,7 +27,7 @@
       class="flex justify-around max-[1200px]:overflow-x-scroll mx-auto overflow-y-hidden h-full"
     >
       <nuxt-link
-        to="/"
+        :to="category?.link"
         class="flex flex-col overflow-hidden relative my-0 mx-[1rem] min-w-[200px]"
         v-for="(category, index) in categories"
         :key="index"

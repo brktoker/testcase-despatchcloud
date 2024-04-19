@@ -9,7 +9,7 @@
       class="type-selection-content flex justify-center items-center max-[800px]:flex-col max-[800px]:px-4 w-full"
     >
       <nuxt-link
-        to="/"
+        :to="type?.link"
         class="relative flex justify-center overflow-hidden cursor-pointer my-2 mx-4 max-[800px]:w-full w-1/3 xl:w-1/4"
         v-for="(type, index) in types"
         :key="index"
@@ -35,16 +35,19 @@ const types = [
     title: "Ladies",
     // img: "https://imagedelivery.net/qQVYSIvyXiV4MHZje7HLkA/GLMnWhEP2xkzsOzI-gender-links-ladies/2400w",
     img: "/images/type-selections/ladies.jpg",
+    link: "https://www.rydale.com/collections/country-gifts-for-her",
   },
   {
     title: "MEN'S",
     // img: "https://imagedelivery.net/qQVYSIvyXiV4MHZje7HLkA/waVcnAU1NO6QGzQt-gender-links-mens/2400w",
     img: "/images/type-selections/mens.jpg",
+    link: "https://www.rydale.com/collections/hand-selected-gifts-for-him?order=manual",
   },
   {
     title: "KID'S",
     // img: "https://imagedelivery.net/qQVYSIvyXiV4MHZje7HLkA/xzLAPcevqHL85KN3-gender-links-kids/2400w",
     img: "/images/type-selections/kids.jpg",
+    link: "https://www.rydale.com/collections/hand-selected-gifts-for-kids?order=manual",
   },
 ];
 </script>

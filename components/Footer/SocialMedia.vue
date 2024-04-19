@@ -24,7 +24,7 @@
         v-for="(s, i) in socialMediaIcons"
         :key="i"
       >
-        <nuxt-link to="/" :aria-label="s?.name">
+        <nuxt-link :to="s?.link" :aria-label="s?.name">
           <span class="leading-none inline-flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,6 +91,7 @@ const socialMediaIcons = [
       height: "20",
     },
     class: "lg:mr-8",
+    link: "https://www.facebook.com/RydaleClothing",
   },
   {
     name: "Twitter",
@@ -100,6 +101,7 @@ const socialMediaIcons = [
       height: "20",
     },
     class: "lg:mr-8",
+    link: "https://twitter.com/RydaleClothing",
   },
   {
     name: "Instagram",
@@ -109,6 +111,7 @@ const socialMediaIcons = [
       height: "20",
     },
     class: "lg:mr-8",
+    link: "https://www.instagram.com/RydaleClothing/",
   },
   {
     name: "Pinterest",
@@ -118,6 +121,7 @@ const socialMediaIcons = [
       height: "20",
     },
     class: "",
+    link: "https://tr.pinterest.com/rydaleclothing/",
   },
 ];
 </script>

@@ -4,7 +4,7 @@
       <div class="w-1/2 px-2 lg:px-0">
         <ul class="text-[15px] min-w-[140px] tracking-wider leading-[1.75]">
           <li v-for="(link, index) in links1" :key="index">
-            <nuxt-link to="/" class="hover:underline">{{
+            <nuxt-link :to="link?.url" class="hover:underline">{{
               $t(link?.name)
             }}</nuxt-link>
           </li>
@@ -15,7 +15,7 @@
           class="text-[15px] min-w-[140px] tracking-wider leading-[1.75] ml-4"
         >
           <li v-for="(link, index) in links2" :key="index">
-            <nuxt-link to="/" class="hover:underline">{{
+            <nuxt-link :to="link?.url" class="hover:underline">{{
               $t(link?.name)
             }}</nuxt-link>
           </li>
@@ -27,22 +27,40 @@
 
 <script setup>
 const links1 = [
-  { name: "About Rydale" },
-  { name: "Careers at Rydale" },
-  { name: "Find a Stockist" },
-  { name: "Shows & Events" },
-  { name: "Contact Rydale" },
-  { name: "Tel: 01377 337160" },
+  { name: "About Rydale", url: "https://www.rydale.com/pages/about-us" },
+  {
+    name: "Careers at Rydale",
+    url: "https://www.rydale.com/pages/rydale-jobs",
+  },
+  {
+    name: "Find a Stockist",
+    url: "https://www.rydale.com/pages/store-locator",
+  },
+  { name: "Shows & Events", url: "https://www.rydale.com/pages/shows-events" },
+  { name: "Contact Rydale", url: "https://www.rydale.com/pages/contact-us" },
+  { name: "Tel: 01377 337160", url: "tel:01377337160" },
 ];
 
 const links2 = [
-  { name: "Help & FAQ" },
-  { name: "Returns & Refunds" },
-  { name: "Delivery Info" },
-  { name: "Terms & Conditions" },
-  { name: "Privacy Policy" },
-  { name: "Choose Your Country or Region" },
-  { name: "Sitemap" },
+  { name: "Help & FAQ", url: "https://www.rydale.com/pages/faq" },
+  {
+    name: "Returns & Refunds",
+    url: "https://www.rydale.com/pages/faq#returnPolicy",
+  },
+  { name: "Delivery Info", url: "https://www.rydale.com/pages/delivery-info" },
+  {
+    name: "Terms & Conditions",
+    url: "https://www.rydale.com/pages/terms-conditions",
+  },
+  {
+    name: "Privacy Policy",
+    url: "https://www.rydale.com/pages/privacy-policy",
+  },
+  {
+    name: "Choose Your Country or Region",
+    url: "https://www.rydale.com/pages/choose-country-region",
+  },
+  { name: "Sitemap", url: "https://www.rydale.com/pages/sitemap" },
 ];
 </script>
 

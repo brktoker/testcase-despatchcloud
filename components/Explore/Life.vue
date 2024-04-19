@@ -11,7 +11,9 @@
         <p class="text-center lg:text-left font-light mb-2 text-lg italic">
           {{ $t("Great reads from our blog") }}
         </p>
-        <nuxt-link to="/" class="underline">{{ $t("See All") }}</nuxt-link>
+        <nuxt-link to="https://www.rydale.com/blogs/news" class="underline">{{
+          $t("See All")
+        }}</nuxt-link>
       </div>
       <div class="w-full lg:w-3/4 flex flex-wrap mt-8 p-4">
         <div
@@ -20,7 +22,7 @@
           v-for="(content, index) in lifeContents"
           :key="index"
         >
-          <nuxt-link to="/">
+          <nuxt-link :to="content?.link">
             <div
               class="trans-shadow relative block shadow-md hover:shadow-xl border border-gray-200 h-full"
             >
@@ -69,6 +71,7 @@ const lifeContents = [
     title: "Dog Friendly Beaches in Norfolk",
     icon: false,
     class: "",
+    link: "https://www.rydale.com/blogs/news/dog-friendly-beaches-in-norfolk",
   },
   {
     // img: "https://imagedelivery.net/qQVYSIvyXiV4MHZje7HLkA/Gh0McBzKAnGh9Zyy-/2400w",
@@ -76,6 +79,7 @@ const lifeContents = [
     title: "5 Smart Casual Outfit Ideas",
     icon: false,
     class: "max-md:hidden",
+    link: "https://www.rydale.com/blogs/news/5-smart-casual-outfit-ideas",
   },
   {
     // img: "https://www.rydale.com/_nuxt/img/11b753a.gif",
@@ -83,6 +87,7 @@ const lifeContents = [
     title: "Don't forget to follow us on instagram",
     icon: true,
     class: "",
+    link: "https://www.instagram.com/rydaleclothing/",
   },
 ];
 </script>

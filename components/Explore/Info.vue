@@ -15,57 +15,29 @@
             :style="expand ? 'max-height: 1296px' : ''"
           >
             <p class="px-3 text-center" @click="expand = !expand">
-              Explore our great range of British country clothing, footwear and
-              country gifts along with rural style shirts and accessories. All
-              inspired and designed in the heart of Yorkshire. Any countryside
-              outing requires the right type of attire and outfit. At Rydale,
-              our brand provides an array of great outdoor clothing, footwear,
-              and accessories. All inspired and designed right in the heart of
-              Yorkshire, here in the UK. We provide a range of fantastic indoor
-              and country outdoor clothing options - from
-              <a href="https://www.rydale.com/collections/mens-tweed-blazers"
-                >quality country tweed jackets</a
-              >, casual rural style wear, a wide collection of
-              <a href="https://www.rydale.com/collections/mens-hats-caps"
-                >flat caps</a
-              >, British eventing equestrian outfits, traditional English clay
-              and pheasant
+              {{ $t("rydale_story") }}
+              <a href="https://www.rydale.com/collections/mens-tweed-blazers">{{
+                $t("quality country tweed jackets")
+              }}</a
+              >, {{ $t("casual rural style wear, a wide collection of") }}
+              <a href="https://www.rydale.com/collections/mens-hats-caps">{{
+                $t("flat caps")
+              }}</a
+              >,
+              {{
+                $t(
+                  "British eventing equestrian outfits, traditional English clay and pheasant"
+                )
+              }}
               <a
                 href="https://www.rydale.com/collections/mens-shooting-clothing"
-                >shooting clothing</a
-              >, fashion jodhpurs, farmers clothing,
+                >{{ $t("shooting clothing") }}</a
+              >, {{ $t("fashion jodhpurs, farmers clothing") }},
               <a
                 href="https://www.rydale.com/collections/ladies-country-boots-footwear"
-                >country boots, </a
-              >and much more. Go ahead and explore our apparel collections of
-              men’s, women’s and children wear for inspired country clothing UK
-              fashion in a range of different sizes including plus size. Let us
-              know if you have any questions with regards to any of the clothing
-              pieces and country fashion wears we will be more than happy to
-              help. We offer a huge range of country clothing for men - whether
-              you are looking for tweed jackets or waistcoats, smart checked
-              shirts, leather boots or classic polo shirts, we have it all.
-              Explore our extensive selection of menswear and find something
-              that is perfect for a country gent. Our collection of ladies
-              clothing offers everything from wax jackets and coats, patterned
-              blouses and casual dresses to long and short leather boots, bags
-              in all different styles and traditional knits. Make sure you check
-              out our selection of womenswear for a completely stylish and
-              functional country outfit. Not forgetting the kids, explore our
-              wide range of children’s clothing and make your little one’s smile
-              with a new pair of wellies, a cosy fleece or a raincoat for
-              adventuring in the Great British outdoors. Here at Rydale, we have
-              something for all the family, no matter what they enjoy doing. We
-              even cater for all the popular outdoor country pursuits, with
-              outdoor clothing specifically designed for shooting, farming,
-              horse riding, walking and fishing. So, make sure you’re well
-              equipped for whatever your next day out in the country brings and
-              get kitted out with our Rydale branded clothing and accessories.
-              Rydale is an excellent place to recreate that traditional British
-              style. Our excellent customer service further compliments our
-              high-quality clothing ranges. Our customer services team is able
-              to advise on all aspects of the brand, whether that be fit, sizing
-              or materials.&nbsp;
+                >{{ $t("country boots") }},
+              </a>
+              {{ $t("rydale_story_2") }} &nbsp;
             </p>
           </div>
           <div class="relative h-1">
