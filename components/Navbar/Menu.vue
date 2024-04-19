@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col flex-grow-0 justify-start w-full overflow-x-hidden absolute left-0 top-16 bg-white z-50 border-t px-2 pb-12 pt-4 h-screen lg:w-auto lg:max-w[300px] xl:max-w-[789px] lg:h-fit xl:w-[775px] xl:justify-evenly xl:flex-grow lg:flex-row lg:static lg:max-h-full lg:items-center lg:bg-transparent lg:z-10 lg:border-0 lg:p-0"
+    class="flex flex-col flex-grow-0 justify-start w-full overflow-x-hidden absolute left-0 top-16 bg-white z-50 border-t px-2 pb-12 pt-4 h-screen lg:w-auto lg:max-w[300px] xl:max-w-[789px] lg:h-fit xl:w-[775px] xl:justify-evenly xl:flex-grow lg:flex-row lg:static lg:max-h-full lg:items-center lg:bg-transparent lg:z-10 lg:border-0 lg:p-0 max-lg:h-[95%] max-lg:overflow-y-auto"
   >
     <div
       class="group static min-h-[2.3rem] flex items-center mt-2 lg:mt-0"
@@ -12,10 +12,13 @@
     >
       <button
         class="px-6 lg:max-xl:px-2 py-2 text-[#2d2d2d] w-full lg:text-center flex items-center capitalize italic font-droit lg:text-xl lg:py-0 min-[1300px]:px-4 min-[1600px]:px-6"
-        :class="{
-          '!font-lato !font-black !text-[#20414b] !not-italic !uppercase text-[18px]':
-            menu?.title === 'SALE',
-        }"
+        :class="[
+          {
+            '!font-lato !font-black !text-[#20414b] !not-italic !uppercase text-[18px]':
+              menu?.title === 'SALE',
+          },
+          { 'lg:!px-4': locale === 'tr' },
+        ]"
         @mouseover="openMenu"
         @mouseout="closeMenu"
         :ref="menu?.title"
@@ -142,6 +145,8 @@ import Delivery from "./Delivery.vue";
 import Flag from "./Flag.vue";
 import Likes from "./Likes.vue";
 const modalStore = useModalStore();
+
+const { locale } = useI18n();
 
 const language = computed(() => {
   return languages.find((lang) => lang.code === modalStore?.lang)?.name;
