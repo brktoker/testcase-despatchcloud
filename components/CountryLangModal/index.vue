@@ -117,7 +117,9 @@
                 {{
                   $t("continue_shopping_text") +
                   country?.name +
+                  " " +
                   $t("in") +
+                  " " +
                   language?.name
                 }}
               </p>

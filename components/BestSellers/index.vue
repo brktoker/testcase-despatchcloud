@@ -41,7 +41,7 @@
             <div
               class="text-center font-semibold mt-4 text-black hover:underline"
             >
-              {{ item?.title }}
+              {{ $t(item?.title) }}
             </div>
             <div
               class="flex justify-center items-center mt-2 text-sm md:text-base"
