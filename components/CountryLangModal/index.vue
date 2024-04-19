@@ -182,58 +182,6 @@ const countinueShopping = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1600px) {
 }
-
-// .modal-mask {
-//   // position: fixed;
-//   // z-index: 9998;
-//   // top: 63px;
-//   // left: 0;
-//   // width: 100%;
-//   // height: 100%;
-//   // background-color: rgba(0, 0, 0, 0.5);
-//   // display: table;
-//   // padding-top: 60px;
-// }
-
-// .modal-wrapper {
-//   display: table-cell;
-// }
-
-// .modal-container {
-//   position: relative;
-//   width: 40%;
-//   height: -moz-fit-content;
-//   height: fit-content;
-//   margin: 0 auto;
-//   background-color: #fff;
-//   opacity: 1;
-//   border-radius: 2px;
-//   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-//   padding: 8px;
-// }
-
-// .close-icon {
-//   font-size: 22px;
-//   font-weight: bolder;
-//   position: absolute;
-//   right: 10px;
-//   cursor: pointer;
-// }
-
-// .modal {
-//   &__title {
-//     font-family: "Droit-Serif", sans-serif;
-//     font-size: 22px;
-//     font-weight: 700;
-//     margin-bottom: 5px;
-//   }
-
-//   &__container {
-//     width: 320px;
-//     margin-top: 30px;
-//     max-width: 100%;
-//   }
-// }
 </style>
 
 <style>
@@ -241,5 +189,6 @@ const countinueShopping = () => {
 
 .vs__selected-options {
   padding: 0.3rem !important;
+  white-space: nowrap;
 }
 </style>
