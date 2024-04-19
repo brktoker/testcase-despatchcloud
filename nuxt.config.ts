@@ -45,12 +45,13 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: "en",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      fallbackLocale: "en",
-      redirectOn: "root",
-    },
+    detectBrowserLanguage: false,
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: "i18n_redirected",
+    //   fallbackLocale: "en",
+    //   redirectOn: "root",
+    // },
   },
   image: {
     // baseUrl: process.env.IMAGE_BASE_URL,
